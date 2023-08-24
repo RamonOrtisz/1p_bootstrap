@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Boostrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="icons/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            
+            background-color: #fff;
+        }
+
+        .section1 {
+            height: 60vh;
+        }
+
+        .section2 {
+            height: 50vh;
+        }
+
+        .section3 {
+            height: 15vh;
+        }
+
+
+        .model img {
+        max-height: 500px;
+        }
+
+        .model {
+            display: flex;
+            padding: 25px 0;
+        }
+
+        .tudo {
+            padding: 10px;
+            margin: 0 20px;
+        }
+
+        .icon1 {
+            display: flex;
+            justify-content: end;
+        }
+
+        @media (max-width: 820px) {
+            .section1{
+                display: block;
+                height: 68vh;
+            }
+
+            .padd{
+                padding: 15px;
+            }
+
+            .section2 {
+                height: 83vh;
+            }
+
+        }
+
+
+        @media (max-width: 375px) {
+            .section1 {
+                height: 94vh;
+            }
+
+            .section2 {
+                height: 290vh;
+            }
+
+            .padd{
+                padding: 15px;
+            }
+
+            .img2 {
+                max-width: 53vh;
+            }
+
+            .p1{
+                font-size: 14px;
+            }
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>CellStore</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2600" class="carousel-item active">
+                <img class="d-block w-100" src="img/iphone1.png">
+            </div>
+            <div data-bs-interval="2600" class="carousel-item">
+                <img class="d-block w-100" src="img/iphone3.png">
+            </div>
+            <div data-bs-interval="2600" class="carousel-item">
+                <img class="d-block w-100" src="img/iphone2.png">
+            </div>
+            <div data-bs-interval="2600" class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="container">
+        <h1>Início</h1>
+        <section class="model section1 " id="inicio">
+    
+            <img class="img2" src="img/novo.png" alt="novo iphone">
+            <div class="tudo" >
+                <h3>Sobre os Novos iPhones</h3>
+                <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa eum veritatis atque recusandae esse consequatur ad, ab natus aperiam minus quae odio quis minima qui commodi suscipit odit quidem quos.</p>
+                <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ex itaque sunt, repudiandae mollitia officia hic, laudantium repellendus maxime nam quas est quaerat ut voluptatem, enim quidem iusto facilis. Libero!</p>
+
+                <a href="#" class="btn btn-outline-dark">Ver mais</a>
+            </div>
+
+        </section>
+    
+        <section class="section2" id="produtos">
+            <h2>Produtos</h2>
+
+            <div class="row">
+                <div class="padd col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Novo!
+                        </div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14pro-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1663611329492"/>
+                        <div class="card-body">
+                            <h4 class="card-title">iPhone 14 Pro</h4>
+                            <h6>R$ 8.999,00</h6>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="padd col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Novo!
+                        </div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone14-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1661958160674"/>
+                        <div class="card-body">
+                            <h4 class="card-title">iPhone 14 Pro</h4>
+                            <h6>R$ 7.999,00</h6>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="padd col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Novo Mini!
+                        </div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone13-202209?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1661958176452"/>
+                        <div class="card-body">
+                            <h4 class="card-title">iPhone 13 Mini</h4>
+                            <h6>R$ 5.999,00</h6>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="padd col-sm-12 col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-header">
+                            iPhone 12
+                        </div>
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-card-40-iphone12-202209?wid=340&hei=264&fmt=jpeg&qlt=95&.v=1661958189616"/>
+                        <div class="card-body">
+                            <h4 class="card-title">iPhone 12 128GB</h4>
+                            <h6>R$ 5.500,00</h6>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <section class="section3" id="contato">
+            <div class="row">
+                <div class="col">
+                    <h2>Contato</h2>
+                    <form>
+                        <h5>Fone:</h5>
+                        <strong>(11) 91234-1234</strong>
+                        <h6>Endereço:</h5>
+                        <strong>Rua 5, centro, bairro 100</strong>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div class="icon">
+        <div class="p-2 fixed-bottom icon1 ">
+            <a href="#" class="btn btn-secondary btn-lg rounded-circle">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
